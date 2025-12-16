@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Produtos</title>
+<link rel="stylesheet" href="./style.css">
+<script src="./script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <h1 class="logo-text">Monamour Secrets</h1>
+  <span class="menu-toggle">☰</span>
+  <nav>
+    <a href="./index.html">Início</a>
+    <a href="./carrinho.html">Carrinho</a>
+  </nav>
+</header>
+
+<section class="fade">
+<h2>Nossos Produtos</h2>
+
+<div class="imagens-container">
+
+  <div class="imagem-item fade">
+    <img src="https://via.placeholder.com/250">
+    <h3>Perfume Secreto</h3>
+    <p>R$ 199,90</p>
+    <button class="btn"
+      onclick="adicionarCarrinho('Perfume Secreto',199.90,'https://via.placeholder.com/250')">
+      Adicionar
+    </button>
+  </div>
+
+  <div class="imagem-item fade">
+    <img src="https://via.placeholder.com/250">
+    <h3>Velas Aromáticas</h3>
+    <p>R$ 89,90</p>
+    <button class="btn"
+      onclick="adicionarCarrinho('Velas Aromáticas',89.90,'https://via.placeholder.com/250')">
+      Adicionar
+    </button>
+  </div>
+
+</div>
+</section>
+
+<footer>
+© 2025 Monamour Secrets
+</footer>
+
+</body>
+</html>
