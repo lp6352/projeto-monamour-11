@@ -1,0 +1,170 @@
+:root {
+  --vinho: #991E27;
+  --preto: #000;
+  --dourado: #E9CB9A;
+  --bronze: #8E4D05;
+  --burgundy: #4C0F15;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--preto);
+  color: var(--dourado);
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, var(--preto), var(--vinho));
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+}
+
+nav a {
+  color: var(--dourado);
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  background: linear-gradient(135deg, #0c0c0c, #330b0f, #8E4D05);
+  display: flex;
+  align-items: center;
+  padding: 40px;
+}
+
+.hero h1 {
+  font-size: 60px;
+}
+
+.hero p {
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.btn {
+  background: var(--vinho);
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--burgundy);
+}
+
+/* SEÇÕES */
+section {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+/* PRODUTOS */
+.imagens-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.imagem-item {
+  width: 260px;
+}
+
+.imagem-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* FORM */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+}
+
+/* CARRINHO */
+.item-carrinho {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 15px 0;
+  justify-content: center;
+}
+
+/* FOOTER */
+footer {
+  background: var(--burgundy);
+  padding: 20px;
+  text-align: center;
+}
+
+/* ANIMAÇÃO */
+.fade {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 1s;
+}
+
+.fade.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: var(--bronze);
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
